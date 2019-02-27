@@ -10,6 +10,7 @@ project(marble)
 SET(CMAKE_COLOR_MAKEFILE ON)
 # SET(CMAKE_SKIP_RPATH ON)
 
+#fPIC
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 # Let CMake find the correct library dir instead of
@@ -51,9 +52,9 @@ if (UNIX)
 
     # Add directories which are in the linker search path (but outside the project)
     # to the RPATH to be used when installing
-    set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+#    set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
     # no libs or plugins are designed to be used from the build dir, so directly link with install rpath
-    set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
+#    set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
 endif (UNIX)
 
 ####################################################
